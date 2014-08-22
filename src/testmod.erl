@@ -13,6 +13,8 @@ foo(X) -> -X.
 %
 bar() -> ok.
 
+private(X) -> X * X.
+
 -ifdef(TEST).
 -include_lib("eunit/include/eunit.hrl").
 
@@ -24,5 +26,8 @@ foo_test() ->
 
 bar_test() ->
     ?assertEqual(ok, bar()).
+
+private_test() ->
+    ?assertEqual(144, private(12)).
 
 -endif.
