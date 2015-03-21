@@ -3,3 +3,5 @@
 /ctest/logs
 erl_crash.dump
 *.ez
+
+/doc
