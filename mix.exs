@@ -13,6 +13,8 @@ defmodule Testproj.Mixfile do
   end
 
   defp deps do
-    []
+    [
+      {:mix_erlang_tasks, "0.1.0"},
+    ]
   end
 end
